@@ -92,6 +92,33 @@
     opacity: 0.82;
   }
 
+  .github-section {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .github-section h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+
+  .github-cards {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+  }
+
+  .github-cards img {
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  }
+  
   /* Social */
   .social-bar {
     margin: 42px 0 8px;
@@ -170,8 +197,19 @@
   HackTheBox
   </a>
 
+  <!-- GitHub Section -->
+  <section class="github-section">
+    <h2>GitHub Activity</h2>
+
+    <div class="github-cards">
+      <img src="https://ghchart.rshah.org/EssenceCodes" alt="Contribution Graph">
+
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EssenceCodes&layout=compact" alt="Top Languages">
+    </div>
+  </section>
+  
   <!-- Social Icons -->
- <div class="social-bar">
+  <div class="social-bar">
   <a href="https://x.com/essencecodes" target="_blank" rel="noopener noreferrer">
     <img class="social-icon" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg" />
   <a href="https://t.me/essencecodes" target="_blank" rel="noopener noreferrer">
