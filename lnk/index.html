@@ -92,24 +92,22 @@
     opacity: 0.82;
   }
 
-  /* GitHub Section */
   .github-section {
     margin-top: 80px;
     text-align: center;
   }
 
-  .github-section h2,
-  .github-section .section-title {
-    font-size: 22px;
+  .github-section h2 {
+    font-size: 24px;
     letter-spacing: 1px;
     margin-bottom: 30px;
   }
 
   .github-cards {
-    display: flex;
-    flex-direction: column; /* stacked */
-    gap: 40px;
-    max-width: 700px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 900px;
     margin: 0 auto 60px;
     padding: 0 20px;
   }
@@ -120,13 +118,7 @@
     background: #fff;
     box-shadow: 0 3px 12px rgba(0,0,0,0.15);
   }
-
-  .github-cards img.activity-graph {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 700px;
-  }
-
+  
   /* Social */
   .social-bar {
     margin: 42px 0 8px;
@@ -193,60 +185,48 @@
 
   <!-- Link Buttons -->
   <a href="https://www.upwork.com/freelancers/~012e6d5eae741869d1" class="link-btn" target="_blank" rel="noopener noreferrer">
-    Upwork
+  Upwork
   </a>
 
-  <div class="section-title">PLAYGROUND</div>
+  <div class="section-title" style="margin-top:40px;">PLAYGROUND</div>
 
   <a href="https://github.com/EssenceCodes" class="link-btn" target="_blank" rel="noopener noreferrer">
-    Github
+  Github
   </a>
   <a href="https://app.hackthebox.com/profile/1130467" class="link-btn" target="_blank" rel="noopener noreferrer">
-    HackTheBox
+  HackTheBox
   </a>
 
   <!-- GitHub Section -->
   <section class="github-section">
-    <div class="section-title">GITHUB ACTIVITY</div>
+    <h2>GitHub Activity</h2>
 
     <div class="github-cards">
+      <img src="https://ghchart.rshah.org/EssenceCodes" alt="Contribution Graph">
 
-      <!-- LARGE ACTIVITY GRAPH -->
-      <img 
-        class="activity-graph"
-        src="https://github-readme-activity-graph.vercel.app/graph?username=EssenceCodes&theme=github&hide_border=true&color=ffffff&line=ffffff&point=ffffff"
-        alt="GitHub Activity Graph"
-      />
-
-      <!-- TOP LANGUAGES -->
-      <img 
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=EssenceCodes&layout=compact&theme=dark"
-        alt="Top Languages"
-      />
-
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EssenceCodes&layout=compact" alt="Top Languages">
     </div>
   </section>
   
   <!-- Social Icons -->
   <div class="social-bar">
-    <a href="https://x.com/essencecodes" target="_blank" rel="noopener noreferrer">
-      <img class="social-icon" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg" />
-    </a>
-    <a href="https://t.me/essencecodes" target="_blank" rel="noopener noreferrer">
-      <img class="social-icon" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/telegram.svg" />
-    </a>
-  </div>
+  <a href="https://x.com/essencecodes" target="_blank" rel="noopener noreferrer">
+    <img class="social-icon" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/x.svg" />
+  <a href="https://t.me/essencecodes" target="_blank" rel="noopener noreferrer">
+    <img class="social-icon" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/telegram.svg" />
+  </a>
+</div>
 
   <!-- Email -->
   <div class="email">HELLO@ESSENCECODES.COM</div>
   
   <!-- Quote -->
   <div class="quote">
-    <span class="quote-icon">❝</span>
-      UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
-    <span class="quote-icon">❞</span>
-    <br>– Dennis Ritchie
-  </div>
+  <span class="quote-icon">❝</span>
+    UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
+  <span class="quote-icon">❞</span>
+  <br>– Dennis Ritchie
+</div>
 
 </div>
 
