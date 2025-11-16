@@ -104,11 +104,11 @@
   }
 
   .github-cards {
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 900px;
-    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    gap: 40px;                /* spacing between cards */
+    max-width: 700px;         /* clean centered width */
+    margin: 0 auto 60px;      /* center + spacing */
     padding: 0 20px;
   }
 
