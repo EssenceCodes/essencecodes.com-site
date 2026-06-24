@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://essencecodes.com/lnk/sitemap.xml
+Sitemap: https://essencecodes.com/sitemap.xml
